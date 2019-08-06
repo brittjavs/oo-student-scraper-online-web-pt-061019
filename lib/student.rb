@@ -8,6 +8,7 @@ class Student
     student_hash.each do |info_key, value|
       self.send("#{info_key}=", value)
     @@all << self
+    binding.pry
   end
   end
 
